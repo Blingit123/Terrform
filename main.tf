@@ -1,8 +1,5 @@
-resource "aws_instance" "test" {
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+resource "aws_s3_bucket" "my_bucket555" {
+  bucket = "my-unique-bucket-nameeeee"
+  acl    = "private"
 
-  tags = {
-    Name = "HelloWorld"
-  }
 }
